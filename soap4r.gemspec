@@ -2,8 +2,7 @@ require 'rubygems'
 require File.join(File.dirname(__FILE__), 'lib', 'soap', 'version')
 
 PKG_NAME      = 'soap4r'
-PKG_BUILD     = ENV['PKG_BUILD'] ? ".#{ENV['PKG_BUILD']}" : ".#{Time.now.strftime('%Y%m%d%H%M%S')}"
-PKG_VERSION   = SOAP::VERSION::STRING + PKG_BUILD
+PKG_VERSION   = SOAP::VERSION::STRING
 
 SPEC = Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
