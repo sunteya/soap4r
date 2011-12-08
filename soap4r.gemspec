@@ -1,8 +1,8 @@
 require 'rubygems'
 require File.join(File.dirname(__FILE__), 'lib', 'soap', 'version')
 
-PKG_NAME      = 'soap4r'
-PKG_VERSION   = SOAP::VERSION::STRING
+PKG_NAME      = 'sunteya-soap4r'
+PKG_VERSION   = "#{SOAP::VERSION::STRING}.0"
 
 SPEC = Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
@@ -12,7 +12,7 @@ SPEC = Gem::Specification.new do |s|
 
   s.author = "Laurence A. Lee, Hiroshi NAKAMURA"
   s.email = "rubyjedi@gmail.com, nahi@ruby-lang.org"
-  s.homepage = "http://wiki.github.com/rubyjedi/soap4r"
+  s.homepage = "https://github.com/sunteya/soap4r"
 
   s.add_dependency("httpclient", "~> 2.1.5.2")
 
